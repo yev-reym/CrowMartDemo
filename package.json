@@ -1,0 +1,27 @@
+{
+  "name": "crowmartdemo",
+  "version": "1.0.0",
+  "description": "",
+  "module": "./crowmart/scripts/index.js",
+  "main": "./crowmart/scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.ts",
+    "build": "./node_modules/.bin/tsc -p ./tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ua-parser-js": "^0.7.36",
+    "@types/uuid": "^9.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
