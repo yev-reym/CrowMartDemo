@@ -151,9 +151,7 @@ export class CartManager {
   }
 
   private addRemoveCartListeners(): void {
-    const removeCartButtons = document.querySelectorAll(
-      "button[class='button-primary']"
-    )
+    const removeCartButtons = document.querySelectorAll('button.button-primary')
 
     if (removeCartButtons?.length) {
       for (let button of removeCartButtons) {
@@ -240,7 +238,7 @@ export class CartManager {
     ) as CrowMarket.CartItem
 
     let newItemsState
-    const newTotal = this.currentCartState.total - cartItemToDelete.quantity
+    const newTotal = this.currentCartState.total - cartItemToDelete.price
     console.log('total', newTotal)
 
     //If only one of item, remove from state, otherwise update quantity
