@@ -15,5 +15,5 @@
 ## About the system:
 
 - IndexedDB API to make persistent local storage in the client
-- No bundling tool, ES6 js is run straight from the html files as a module
-- The site should send an alert when the remarketing score reaches a certain threshold. This may take a bit of clicking around.
+- No bundling tool
+- The site should send an alert when the remarketing score passes a certain threshold. This may take a bit of navigating around the site. 
