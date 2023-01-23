@@ -62,6 +62,6 @@ export async function fireView(event_id: string): Promise<void> {
     }
 
     await stateManager.upsertToState('predictions', updatedPredictionsState)
-    predictionResponder(latestPrediction, event_id, events[event_id].length)
+    predictionResponder(latestPrediction, event_id)
   }
 }
